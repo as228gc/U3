@@ -9,12 +9,13 @@ body {
 }
 
 .grid-container {
-  grid-template-columns: 2rem auto 20% 2rem;
-  grid-template-rows: min-content min-content auto;
+  grid-template-columns: 90px auto 20% 2rem;
+  grid-template-rows: min-content min-content auto 90px;
   grid-template-areas:
     "nav nav nav nav"
     "header header header header"
-    ". main aside .";
+    ". main aside ."
+    "footer footer footer footer";
 }
 
 #logo {
@@ -37,23 +38,24 @@ body {
 }
 
 nav {
+  height: 90px;
   grid-area: nav;
   background-color: rgba(168, 82, 28, 0.712);
 }
 
-nav ul {
-  gap: 1rem;
+#menucheckbox~ul {
+  gap: .3rem;
   margin-right: 1rem;
   display: flex;
 }
 
-nav ul li {
-  background-color: brown;
-  border-radius: 10px;
+#menucheckbox~ul li {
+  background-color: rgb(159, 98, 98);
+  border-radius: 5px;
   list-style-type: none;
 }
 
-nav ul li a {
+#menucheckbox~ul li a {
   width: 8rem;
   padding: 1rem 0;
   text-align: center;
@@ -63,7 +65,7 @@ nav ul li a {
   display: block;
 }
 
-nav ul li a:hover {
+#menucheckbox~ul li a:hover {
   color: green;
 }
 
@@ -124,6 +126,10 @@ aside {
   grid-area: aside;
 }
 
+footer {
+  grid-area: footer;
+}
+
 /*Menu html*/
 .card-container {
   margin-top: 20px;
@@ -171,6 +177,7 @@ aside {
   background-size: cover;
 }
 
+/*Media Query*/
 @media screen and (max-width: 870px) {
 
 
@@ -181,14 +188,13 @@ aside {
 
   #menucheckbox~ul {
     display: none;
+    transform: scaleY(0);
     height: 0;
-    /* transform: scaleY(0); */
-    transition: transform .2s;
+    transition: transform .2s ease-in-out;
     transform-origin: top;
 
-    top: 82px;
+    top: 90px;
     flex-direction: column;
-    justify-content: flex-start;
     gap: 2rem;
     position: absolute;
     background-color: grey;
@@ -202,6 +208,7 @@ aside {
     display: flex;
     height: 100%;
     transform: scaleY(1);
+    transition: transform .2s ease-in-out;
   }
 
   #menucheckbox~ul li a {
