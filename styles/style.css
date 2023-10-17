@@ -185,7 +185,6 @@ footer {
   }
 
   #menucheckbox~ul {
-    display: none;
     transform: scaleY(0);
     height: 0;
     transition: transform .2s ease-in-out;
@@ -206,7 +205,6 @@ footer {
     display: flex;
     height: 100%;
     transform: scaleY(1);
-    transition: transform .2s ease-in-out;
   }
 
   #menucheckbox~ul li a {
