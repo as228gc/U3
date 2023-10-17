@@ -236,6 +236,12 @@ footer {
 }
 
 @media screen and (max-width: 580px) {
+
+  header {
+    height: 40vh;
+    background-size: cover;
+  }
+
   .card {
     width: 80%;
     height: 20rem;
