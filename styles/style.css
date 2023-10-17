@@ -40,7 +40,9 @@ body {
 nav {
   height: 90px;
   grid-area: nav;
-  background-color: rgba(168, 82, 28, 0.712);
+  background-color: rgba(86, 73, 65, 0.903);
+  position: sticky;
+  top: 0;
 }
 
 #menucheckbox~ul {
@@ -192,8 +194,8 @@ footer {
     top: 90px;
     flex-direction: column;
     gap: 2rem;
-    position: absolute;
-    background-color: grey;
+    position: fixed;
+    background-color: rgba(86, 73, 65, 0.903);
     padding: 0;
     margin: 0;
     opacity: .98;
