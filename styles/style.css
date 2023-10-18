@@ -145,10 +145,12 @@ header h1 {
 
 main {
   grid-area: main;
+  margin: 0 2rem;
 }
 
 #sideinfo {
   grid-area: sideinfo;
+  margin: 0 2rem;
 }
 
 footer {
@@ -233,10 +235,9 @@ footer {
 
 
   .grid-container {
-    display: grid;
     grid-template-columns: auto;
     grid-template-rows: min-content min-content auto auto min-content;
-    grid-area: 
+    grid-template-areas: 
     "nav"
     "header"
     "main"
