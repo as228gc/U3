@@ -80,7 +80,7 @@ nav {
 }
 
 #menucheckbox~ul li a:hover {
-  color: green;
+  opacity: .6;
   transition: .15s;
 }
 
@@ -285,10 +285,13 @@ footer {
     display: flex;
     height: 100%;
     transform: scaleY(1);
+    gap: 0;
   }
 
   #menucheckbox~ul li a {
     width: 100%;
+    padding: 2rem 0;
+    border-bottom: 1px solid white;
   }
 
   #menucheckbox:checked~#menuicon>#line1 {
