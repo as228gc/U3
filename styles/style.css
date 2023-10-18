@@ -43,6 +43,7 @@ nav {
   background-color: rgba(86, 73, 65, 0.903);
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 #menucheckbox~ul {
@@ -90,7 +91,7 @@ nav {
   display: block;
   background-color: black;
   height: 4px;
-  border-radius: 30%;
+  border-radius: 10px;
   transition: transform .2s ease-in-out;
   transform-origin: left center;
 }
@@ -111,6 +112,10 @@ nav {
 .center {
   justify-content: center;
   align-items: center;
+}
+
+.column {
+  flex-direction: column;
 }
 
 header {
@@ -134,25 +139,49 @@ footer {
 }
 
 /*Menu html*/
+
+.text-center {
+  text-align: center;
+}
+
+.grand-heading {
+  font-size: 3rem;
+}
+
 .card-container {
-  margin-top: 20px;
+  margin: 3rem 0;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
 .card {
+  position: relative;
   border: 1px solid black;
   height: 50rem;
   width: 30rem;
   border-radius: 15px;
   text-align: center;
   flex-direction: column;
+  transform: scale(1);
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform .2s;
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .card h1 {
   background-color: rgba(255, 255, 255, 0.5);
   display: inline-block;
-  color: black;
 }
 
 #price1 {
@@ -173,6 +202,11 @@ footer {
 #vegetarian {
   background-image: url('../resources/img/pizzademo.jpg');
   background-size: cover;
+}
+
+/*Prisklass*/
+.ingredients {
+  font-style: italic;
 }
 
 /*Media Query*/
