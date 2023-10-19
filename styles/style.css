@@ -448,5 +448,6 @@ footer {
 @media screen and (max-width: 360px) {
   #order-form {
     border: none;
+    padding: 0;
   }
 }
