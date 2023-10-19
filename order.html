@@ -25,7 +25,7 @@
     <ul>
       <li><a href="index.html">Start</a></li>
       <li><a href="menu.html">Meny</a></li>
-      <li><a href="">Om oss</a></li>
+      <li><a href="about.html">Om oss</a></li>
       <li><a href="order.html">Beställ</a></li>
     </ul>
   </nav>
@@ -34,16 +34,17 @@
     <h2>Telefonnummer</h2>
     <h3>076-837 35 34</h3>
     <h2>Beställ via vårt formulär</h2>
-    <form action="" method="POST" id="order-form">
+    <form netlify id="order-form">
       <label for="fullname">För- och efternamn:</label>
-      <input type="text" id="fullname">
+      <input type="text" id="fullname" required>
       <label for="email">E-mail:</label>
       <input type="email" id="email">
       <label for="phone-number">Telefonnummer:</label>
-      <input type="text" id="phone-number">
+      <input type="text" id="phone-number" required>
       <label for="order">Din beställning: </label>
-      <input type="text" id="order">
-      <select>
+      <input type="text" id="order" required>
+      <label for="take-away-option">Ta med eller äta här: </label>
+      <select id="take-away-option">
         <option value="take-away" selected>Ta med</option>
         <option value="at-restaurant">Äta här</option>
       </select>
