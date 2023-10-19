@@ -243,6 +243,19 @@ footer {
   font-style: italic;
 }
 
+
+/*Contact*/
+#order-form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: space-around;
+}
+
+#order-form input {
+  margin: .5rem 0;
+}
+
 /*Media Query*/
 @media screen and (max-width: 870px) {
 
