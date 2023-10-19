@@ -10,68 +10,70 @@
 </head>
 
 <body>
-  <nav class="flex space-between">
-    <a href="index.html" id="logo" class="flex">
-      <img src="./resources/img/ai-removebg-preview.png" alt="logo">
-      Alex's pizza
-    </a>
-    <!--Check box for hamburger navigation-->
-    <input type="checkbox" id="menucheckbox">
-    <label for="menucheckbox" id="menuicon">
-      <span id="line1"></span>
-      <span id="line2"></span>
-      <span id="line3"></span>
-    </label>
-    <ul>
-      <li><a href="index.html">Start</a></li>
-      <li><a href="menu.html">Meny</a></li>
-      <li><a href="about.html">Om oss</a></li>
-      <li><a href="order.html">Beställ</a></li>
-    </ul>
-  </nav>
-  <div id="order-display-grid">
+  <div>
+    <nav class="flex space-between">
+      <a href="index.html" id="logo" class="flex">
+        <img src="./resources/img/ai-removebg-preview.png" alt="logo">
+        Alex's pizza
+      </a>
+      <!--Check box for hamburger navigation-->
+      <input type="checkbox" id="menucheckbox">
+      <label for="menucheckbox" id="menuicon">
+        <span id="line1"></span>
+        <span id="line2"></span>
+        <span id="line3"></span>
+      </label>
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="menu.html">Meny</a></li>
+        <li><a href="about.html">Om oss</a></li>
+        <li><a href="order.html">Beställ</a></li>
+      </ul>
+    </nav>
+    <div id="order-display-grid">
 
-    <div id="phone-info">
-      <h1>Beställ</h1>
-      <h2>Telefon</h2>
-      <p>Beställa via telefon genom att ringa oss på nummer: </p>
-      <p id="phone-number">076-837 35 34</p>
-    </div>
+      <div id="phone-info">
+        <h1>Beställ</h1>
+        <h2>Telefon</h2>
+        <p>Beställa via telefon genom att ringa oss på nummer: </p>
+        <p id="phone-number">076-837 35 34</p>
+      </div>
 
-    <div id="form-container" class="flex column">
-      <h2>Beställ via vårt formulär</h2>
-      <form name="orders" method="POST" netlify id="order-form">
-        <p>
-          <label>För- och efternamn: <br><input type="text" name="name" required /></label>
-        </p>
-        <p>
-          <label>Din e-mail: <br><input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Ditt telefonnummer: <br><input type="text" name="phone-number" /></label>
-        </p>
-        <p id="order-label-text">
-          <label>Din beställning: <br> (Antal och namn/nummer på pizzan)<textarea name="order"
-              id="order-text-area"></textarea></label>
-        </p>
-        <p>
-          <label>
-            Ta med eller äta här: <br>
-            <select name="take-away-option" id="select-take-away">
-              <option value="take-away" selected>Ta med</option>
-              <option value="eat-here">Äta här</option>
-            </select>
-          </label>
-        </p>
-        <p>Vi kontaktar dig via SMS och mail om när din beställning är klar att hämtas!</p>
-        <p>
-          <button type="submit" id="order-submit-button">Skicka beställning</button>
-        </p>
-      </form>
+      <div id="form-container" class="flex column">
+        <h2>Beställ via vårt formulär</h2>
+        <form name="orders" method="POST" netlify id="order-form">
+          <p>
+            <label>För- och efternamn: <br><input type="text" name="name" required /></label>
+          </p>
+          <p>
+            <label>Din e-mail: <br><input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>Ditt telefonnummer: <br><input type="text" name="phone-number" /></label>
+          </p>
+          <p id="order-label-text">
+            <label>Din beställning: <br> (Antal och namn/nummer på pizzan)<textarea name="order"
+                id="order-text-area"></textarea></label>
+          </p>
+          <p>
+            <label>
+              Ta med eller äta här: <br>
+              <select name="take-away-option" id="select-take-away">
+                <option value="take-away" selected>Ta med</option>
+                <option value="eat-here">Äta här</option>
+              </select>
+            </label>
+          </p>
+          <p>Vi kontaktar dig via SMS och mail om när din beställning är klar att hämtas!</p>
+          <p>
+            <button type="submit" id="order-submit-button">Skicka beställning</button>
+          </p>
+        </form>
+      </div>
+      <footer>
+        <h1>This is a footer</h1>
+      </footer>
     </div>
-    <footer>
-      <h1>This is a footer</h1>
-    </footer>
   </div>
 </body>
 
