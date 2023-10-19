@@ -32,10 +32,11 @@
   <div class="flex column center">
     <h1>Beställ</h1>
     <h2>Telefonnummer</h2>
-    <h3>076-837 35 34</h3>
+    <p>Beställa via telefon genom att ringa oss på: </p>
+    <p id="phone-number">076-837 35 34</p>
     <h2>Beställ via vårt formulär</h2>
 
-    <form name="orders" method="POST" netlify>
+    <form name="orders" method="POST" netlify class="flex center column">
       <p>
         <label>För- och efternamn: <br><input type="text" name="name" required /></label>
       </p>
@@ -45,13 +46,13 @@
       <p>
         <label>Ditt telefonnummer: <br><input type="text" name="phone-number" /></label>
       </p>
-      <p>
-        <label>Din beställning: <br><textarea name="order"></textarea></label>
+      <p id="order-label-text">
+        <label>Din beställning: <br> (Antal och namn/nummer på pizzan)<textarea name="order" id="order-text-area"></textarea></label>
       </p>
       <p>
         <label>
           Ta med eller äta här: <br>
-          <select name="take-away-option">
+          <select name="take-away-option" id="select-take-away">
             <option value="take-away" selected>Ta med</option>
             <option value="eat-here">Äta här</option>
           </select>
@@ -59,7 +60,7 @@
       </p>
       <p>Vi skickar på SMS och mail om när din beställning är klar att hämtas!</p>
       <p>
-        <button type="submit">Skicka beställning</button>
+        <button type="submit" id="order-submit-button">Skicka beställning</button>
       </p>
     </form>
 

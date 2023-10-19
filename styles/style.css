@@ -256,6 +256,39 @@ footer {
   margin: .5rem 0;
 }
 
+#select-take-away {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#select-take-away option{
+  font-size: 1rem;
+}
+
+#order-label-text {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#order-text-area {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+
+#order-submit-button {
+  background-color: rgb(58, 24, 24);
+  padding: 1rem;border-radius: 5px;
+  color: whitesmoke;
+  font-size: 1rem;
+  transition: .15s;
+}
+#order-submit-button:hover {
+  opacity: .8;
+  transition: .15s;
+  cursor: pointer;
+}
 /*Media Query*/
 @media screen and (max-width: 870px) {
 
