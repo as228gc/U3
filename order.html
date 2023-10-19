@@ -34,6 +34,7 @@
     <h2>Telefonnummer</h2>
     <h3>076-837 35 34</h3>
     <h2>Beställ via vårt formulär</h2>
+    <!--
     <form method="POST" data-netlify="true" id="order-form" name="orders">
       <label for="fullname">För- och efternamn:</label>
       <input type="text" id="fullname" required>
@@ -51,6 +52,36 @@
       <p>Vi skickar på SMS och mail om när din beställning är klar att hämtas!</p>
       <button type="submit">Skicka beställning</button>
     </form>
+    -->
+
+    <form name="orders" method="POST" netlify>
+      <p>
+        <label>För- och efternamn: <input type="text" name="name" required/></label>
+      </p>
+      <p>
+        <label>Din e-mail: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Ditt telefonnummer: <input type="text" name="phone-number"/></label>
+      </p>
+      <p>
+        <label>Din beställning: <textarea name="order"></textarea></label>
+      </p>
+      <p>
+        <label>
+          Ta med eller äta här: 
+          <select name="take-away-option">
+            <option value="take-away" selected>Ta med</option>
+            <option value="eat-here">Äta här</option>
+          </select>
+        </label>
+      </p>
+      <p>Vi skickar på SMS och mail om när din beställning är klar att hämtas!</p>
+      <p>
+        <button type="submit">Skicka beställning</button>
+      </p>
+    </form>
+    
   </div>
 </body>
 
