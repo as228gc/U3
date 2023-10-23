@@ -43,17 +43,19 @@
         <h2>Beställ via vårt formulär</h2>
         <form name="orders" method="POST" netlify id="order-form">
           <p>
-            <label>För- och efternamn: <br><input type="text" name="name" required /></label>
+            <label>För- och efternamn: <br><input type="text" name="name" required placeholder="Pizza Degsson"/></label>
           </p>
           <p>
-            <label>Din e-mail: <br><input type="email" name="email" /></label>
+            <label>Din e-mail: <br><input type="email" name="email" placeholder="example@email.com"/></label>
           </p>
           <p>
-            <label>Ditt telefonnummer: <br><input type="text" name="phone-number" /></label>
+            <label>Ditt telefonnummer: <br><input type="text" name="phone-number" placeholder="07x-xxx xx xx"/></label>
           </p>
           <p id="order-label-text">
-            <label>Din beställning: <br> (Antal och namn/nummer på pizzan)<textarea name="order"
-                id="order-text-area"></textarea></label>
+            <label>Din beställning: <br> (Antal och namn/nummer på pizzan)
+              <br>
+              <textarea name="order"
+                id="order-text-area" placeholder="Ex. 2 st kebabpizza utan lök."></textarea></label>
           </p>
           <p>
             <label>
