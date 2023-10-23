@@ -254,11 +254,6 @@ footer {
   background-size: cover;
 }
 
-/*Prisklass*/
-.ingredients {
-  font-style: italic;
-}
-
 
 /*Order*/
 #order-display-grid {
@@ -361,6 +356,60 @@ footer {
   grid-area: about-story;
 }
 
+/*Price class*/
+.grid-container-priceclass {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: auto min-content;
+  grid-template-areas: 
+  "localnav pizza-list"
+  "footer footer";
+}
+
+.localnav {
+  grid-area: localnav;
+  /* background-color: brown; */
+  height: min-content;
+  z-index: 1;
+  background-color: white;
+  position: unset;
+}
+
+.localnav ul {
+  text-align: center;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.localnav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: black;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.pizza-list {
+  grid-area: pizza-list;
+  margin: 1rem auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 3rem;
+}
+
+.pizza-list dt {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.ingredients {
+  font-style: italic;
+}
+
 /*Media Query*/
 @media screen and (max-width: 870px) {
 
@@ -443,11 +492,54 @@ footer {
     width: 80%;
     height: 20rem;
   }
+
+  .grid-container-priceclass {
+    grid-template-columns: auto;
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas: 
+    "localnav"
+    "pizza-list"
+    "footer";
+  }
+
+  .localnav {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .localnav ul {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100vh;
+  }
+  .localnav ul li {
+    max-width: 20%;
+    gap: .2rem;
+    margin: 0;
+    min-width: fit-content;
+  }
+
+  .localnav ul li a {
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: rgb(215, 215, 215);
+    transition: .15s;
+  }
+
+  .localnav ul li a:hover {
+    opacity: .8;
+    transition: .15s;
+  }
 }
 
 @media screen and (max-width: 360px) {
   #order-form {
     border: none;
     padding: 0;
+  }
+
+  .pizza-list {
+    border: none;
   }
 }
