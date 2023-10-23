@@ -368,7 +368,6 @@ footer {
 
 .localnav {
   grid-area: localnav;
-  /* background-color: brown; */
   height: min-content;
   z-index: 1;
   background-color: white;
@@ -379,7 +378,7 @@ footer {
   text-align: center;
   gap: 2rem;
   list-style-type: none;
-  padding: 0;
+  padding: 0 1rem;
 }
 
 .localnav ul li a {
@@ -388,9 +387,15 @@ footer {
   font-size: 1.4rem;
   color: black;
   padding: 1rem 2rem;
-  background-color: white;
+  background-color: rgb(215, 215, 215);
   border-radius: 10px;
   border: 1px solid black;
+  transition: .15s;
+}
+
+.localnav ul li a:hover {
+  opacity: .8;
+  transition: .15s;
 }
 
 .pizza-list {
@@ -512,24 +517,19 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 100vh;
+    gap: .4rem;
   }
+
   .localnav ul li {
     max-width: 20%;
-    gap: .2rem;
     margin: 0;
     min-width: fit-content;
   }
 
   .localnav ul li a {
     font-size: 1rem;
-    padding: 1rem;
-    background-color: rgb(215, 215, 215);
-    transition: .15s;
-  }
-
-  .localnav ul li a:hover {
-    opacity: .8;
-    transition: .15s;
+    padding: .5rem 1.4rem;
+    
   }
 }
 
