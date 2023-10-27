@@ -33,10 +33,11 @@ html, body {
   max-height: 100px;
   /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.2rem;
   flex-direction: column;
   text-align: center;
   text-decoration: none;
-  color: rgb(198, 198, 198);
+  color: whitesmoke;
   margin-left: 2rem;
 }
 
@@ -66,10 +67,10 @@ nav {
 }
 
 #menucheckbox~ul li {
-  background-color: rgb(58, 24, 24);
+  /* background-color: rgb(58, 24, 24); */
   opacity: 1;
   /* background-color: rgb(159, 98, 98); */
-  border-radius: 5px;
+  /* border-radius: 5px; */
   list-style-type: none;
 }
 
@@ -80,9 +81,14 @@ nav {
   font-size: 1.4rem;
   text-decoration: none;
   color: white;
-  display: block;
+  /* display: block; */
+  gap: 10px;
   transition: .15s;
 }
+#menucheckbox~ul li:not(:last-child) {
+  border-right: 1px solid whitesmoke;
+}
+
 
 #menucheckbox~ul li a:hover {
   opacity: .6;
@@ -224,6 +230,16 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+#menu-info {
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+#menu-info p {
+  padding: 0 2rem;
 }
 
 .card h1 {
@@ -398,17 +414,38 @@ footer {
   transition: .15s;
 }
 
+#return-arrow {
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
+  width: 80%;
+  transition: .15s;
+}
+
+#return-arrow:hover {
+  opacity: .8;
+  transition: .15s;
+}
+
 .pizza-list {
   grid-area: pizza-list;
-  margin: 1rem auto;
+  margin: 1rem;
   border: 1px solid black;
   border-radius: 10px;
   padding: 3rem;
 }
 
+.pizza-list ol {
+  font-size: 1.4rem;
+}
+
 .pizza-list dt {
   font-size: 1.4rem;
   margin-top: 1rem;
+}
+
+.pizza-list dd {
+  font-size: 1.2rem;
 }
 
 .ingredients {
@@ -463,6 +500,7 @@ footer {
   #menucheckbox~ul li a {
     width: 100%;
     padding: 2rem 0;
+    background-color: rgb(58, 24, 24);
     border-bottom: 1px solid white;
   }
 
