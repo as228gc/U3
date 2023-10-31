@@ -171,7 +171,7 @@ main {
 footer {
   grid-area: footer;
   background-color: aliceblue;
-  width: 100%;
+  background-color: rgb(69, 61, 56);
 }
 
 /*Menu html*/
