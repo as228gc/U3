@@ -14,7 +14,6 @@
     <nav class="flex space-between">
       <a href="index.html" id="logo" class="flex">
         <img src="./resources/img/ai-removebg-preview.png" alt="logo">
-        Alex's pizza
       </a>
       <!--Check box for hamburger navigation-->
       <input type="checkbox" id="menucheckbox">
@@ -24,10 +23,11 @@
         <span id="line3"></span>
       </label>
       <ul>
-        <li><a href="index.html" class="flex center">Start <img src="./resources/img/icons8-home-24.svg"/></a></li>
+        <li><a href="index.html" class="flex center">Start <img src="./resources/img/icons8-home-24.svg" /></a></li>
         <li><a href="menu.html" class="flex center">Meny <img src="./resources/img/icons8-dining-room-24.svg"></a></li>
         <li><a href="about.html" class="flex center">Om oss <img src="./resources/img/icons8-about-24.svg"></a></li>
-        <li><a href="order.html" class="flex center">Beställ <img src="./resources/img/icons8-shopping-cart-24.svg"></a></li>
+        <li><a href="order.html" class="flex center">Beställ <img src="./resources/img/icons8-shopping-cart-24.svg"></a>
+        </li>
       </ul>
     </nav>
     <div id="order-display-grid">
@@ -43,19 +43,20 @@
         <h2>Beställ via vårt formulär</h2>
         <form name="orders" method="POST" netlify id="order-form">
           <p>
-            <label>För- och efternamn: <br><input type="text" name="name" required placeholder="Pizza Degsson"/></label>
+            <label>För- och efternamn: <br><input type="text" name="name" required
+                placeholder="Pizza Degsson" /></label>
           </p>
           <p>
-            <label>Din e-mail: <br><input type="email" name="email" placeholder="example@email.com"/></label>
+            <label>Din e-mail: <br><input type="email" name="email" placeholder="example@email.com" /></label>
           </p>
           <p>
-            <label>Ditt telefonnummer: <br><input type="text" name="phone-number" placeholder="07X-XXX XX XX"/></label>
+            <label>Ditt telefonnummer: <br><input type="text" name="phone-number" placeholder="07X-XXX XX XX" /></label>
           </p>
           <p id="order-label-text">
             <label>Din beställning: <br> (Antal och namn/nummer på pizzan)
               <br>
-              <textarea name="order"
-                id="order-text-area" placeholder="Ex. 2 st kebabpizza utan lök."></textarea></label>
+              <textarea name="order" id="order-text-area"
+                placeholder="Ex. 2 st kebabpizza utan lök."></textarea></label>
           </p>
           <p>
             <label>
@@ -75,8 +76,10 @@
       <footer class="flex center space-around">
         <div class="footer-info">
           <h4>Alex's Pizza</h4>
-          <a href="./about.html#location-frame" id="adress"><h4>Pizzadegsvägen 11</h4></a>
-          <h4>Telefonnummer: 0768373534</h4>
+          <a href="./about.html#location-frame" id="adress">
+            <h4>Pizzadegsvägen 11</h4>
+          </a>
+          <h4>Telefonnummer: 076 837 35 34</h4>
         </div>
         <div class="socials flex space-around">
           <a href="#"><img src="./resources/img/social-icons/icons8-facebook-50_1.svg" alt="Facebook logo"></a>
