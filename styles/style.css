@@ -112,7 +112,7 @@ nav {
 #line2,
 #line3 {
   display: block;
-  background-color: black;
+  background-color: whitesmoke;
   height: 4px;
   border-radius: 10px;
   transition: transform .15s ease-in-out;
