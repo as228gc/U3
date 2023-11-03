@@ -42,6 +42,7 @@
       <div id="form-container" class="flex column">
         <h2>Beställ via vårt formulär</h2>
         <form name="orders" method="POST" netlify data-netlify="true" id="order-form">
+          <input type="hidden" name="form-name" value="orders" />
           <p>
             <label>För- och efternamn: <br><input type="text" name="customer-name" required
                 placeholder="Pizza Degsson" /></label>
