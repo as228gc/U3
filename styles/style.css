@@ -23,9 +23,9 @@ html, body {
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header header header"
-    ". main sideinfo ."
+    ". welcome-info welcome-info ."
     "footer footer footer footer";
-  min-height: 100vh;
+  min-height: 95vh;
   row-gap: 5rem;
 }
 
@@ -58,10 +58,7 @@ nav {
 }
 
 #menucheckbox~ul li {
-  /* background-color: rgb(58, 24, 24); */
   opacity: 1;
-  /* background-color: rgb(159, 98, 98); */
-  /* border-radius: 5px; */
   list-style-type: none;
 }
 
@@ -72,7 +69,6 @@ nav {
   font-size: 1.4rem;
   text-decoration: none;
   color: white;
-  /* display: block; */
   gap: 10px;
   transition: .15s;
 }
@@ -144,7 +140,6 @@ header {
   background-position-y: center;
   background-size: cover;
   background-color: rgb(90, 90, 90);
-  height: 700px;
   background-blend-mode: soft-light;
   font-family: 'Dorsa', sans-serif;
   font-size: 5rem;
@@ -156,13 +151,10 @@ header h1 {
   padding: 3rem
 }
 
-main {
-  grid-area: main;
-  margin: 0 2rem;
-}
-
-#sideinfo {
-  grid-area: sideinfo;
+.welcome-info {
+  grid-area: welcome-info;
+  font-size: 1.4rem;
+  gap: 2rem;
   margin: 0 2rem;
 }
 
@@ -172,6 +164,7 @@ footer {
   height: 15rem;
   background-color: rgb(69, 61, 56);
   color: #f5f5f5;
+  font-size: 1.4rem;
 }
 
 .socials {
@@ -205,7 +198,7 @@ footer {
   "."
   "card-container"
   "footer";
-  min-height: 100vh;
+  min-height: 97vh;
 }
 
 .text-center {
@@ -274,17 +267,17 @@ footer {
 }
 
 #price2 {
-  background-image: url('../resources/img/pizzademo.jpg');
+  background-image: url('../resources/img/pizza2.jpg');
   background-size: cover;
 }
 
 #price3 {
-  background-image: url('../resources/img/pizzademo.jpg');
+  background-image: url('../resources/img/pizza3.jpg');
   background-size: cover;
 }
 
 #vegetarian {
-  background-image: url('../resources/img/pizzademo.jpg');
+  background-image: url('../resources/img/pizza4.jpg');
   background-size: cover;
 }
 
@@ -298,7 +291,7 @@ footer {
   "phone-info"
   "form-container"
   "footer";
-  min-height: 100vh;
+  min-height: 93vh;
   text-align: center;
 }
 
@@ -384,7 +377,8 @@ footer {
   "."
   "about-story"
   "footer";
-  min-height: 100vh;
+  min-height: 95vh;
+  font-size: 1.4rem;
 }
 
 #about-story {
@@ -407,7 +401,7 @@ footer {
   grid-template-areas: 
   "localnav pizza-list ."
   "footer footer footer";
-  min-height: 100vh;
+  min-height: 93vh;
 }
 
 .localnav {
@@ -481,17 +475,28 @@ footer {
 }
 
 /*Media Query*/
+@media screen and (max-width: 2100px) {
+  .card {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 870px) {
 
 
   .grid-container {
     grid-template-columns: auto;
-    grid-template-rows: min-content auto auto min-content;
+    grid-template-rows: min-content auto min-content;
     grid-template-areas: 
     "header"
-    "main"
-    "sideinfo"
+    "welcome-info"
     "footer";
+  }
+
+  .welcome-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   header h1 {
@@ -558,6 +563,10 @@ footer {
     background-size: cover;
   }
 
+  #about-story {
+    font-size: 1.2rem;
+  }
+
   .card {
     width: 80%;
     height: 20rem;
@@ -613,6 +622,8 @@ footer {
     border: none;
     padding: 0;
   }
+
+
 
   .pizza-list {
     border: none;

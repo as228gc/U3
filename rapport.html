@@ -43,10 +43,10 @@
     <main>
         <section>
             <h2>1. Syfte och målgrupp</h2>
-            <p>I uppgiften skapades en webbplats för ... en pizzeria.
+            <p>I uppgiften skapades en webbplats för en pizzeria som är belägen på en mindre ort. Pizzerian erbjuder endast pizzor och dryck.
                 <!-- Ange vad det är för företag eller annan organisation. -->
             </p>
-            <p>Syfte med webbplatsen är ... att visa företaget på webben. För tillfället finns företaget endast på sociala medier, och har inte någon webbplats för att visa vad som erbjuds och till vilka priser. Målet är att användare ska snabbt hitta till företagets webbplats och där hitta allt de behöver för att kunna beställa mat, eller se när man kan besöka pizzerian.
+            <p>Syftet med webbplatsen är att visa företaget på webben och nå ut till fler potentiella kunder. För tillfället finns företaget endast på sociala medier, och har inte någon webbplats för att visa vad som erbjuds och till vilka priser. Målet är att användare snabbt ska hitta till företagets webbplats och där hitta allt de behöver för att kunna beställa mat, eller se när man kan besöka pizzerian.
                 <!-- Fyll på med kort beskrivning som anger syftet med webbplatsen. -->
                 <!-- Alltså syfte och mål med webbplatsen för företaget eller organisationen. -->
             </p>
@@ -75,15 +75,16 @@
             <h3>Innehåll</h3>
             <!-- Skriv korta konkreta och mätbara krav som beskriver VAD innehållet ska bestå av. -->
             <ul>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
+                <li>Visa luncherbjudande</li>
+                <li>Visa olika prisklasser för meny</li>
+                <li>Visa öppettider</li>
+                <li>Visa pizzerians adress</li>
             </ul>
             <h3>Funktion</h3>
             <!-- Skriv korta konkreta och mätbara krav som beskriver VAD användaren ska kunna göra. -->
             <ul>
                 <li>Beställa genom ett formulär</li>
-                <li>...</li>
+                <li>Tillgänglighet för mobila enheter</li>
                 <li>...</li>
             </ul>
         </section>
@@ -92,8 +93,9 @@
            
            <!-- Beskriv hur du arbetat med uppgiften. -->
            <!-- För VG är det viktigt att du beskriver hur du använt Garretts modell och tar med referenser med sidnummer till boken, för att styrka det du tar upp i din text. Se mer info i rutan om referenser på uppgiftens webbsida. -->
-           <p>Första steget var att komma på en idé om vad sidan ska handla om. Min lokala pizzeria har inte någon webbplats och jag som kund, bland andra, saknar en sådan webbplats att hitta information. Därmed finns det ett klart syfte med webbplatsen. Efter att idén var fastställd började intervjuer med personer i olika åldrar vad de skulle vilja se på en sådan webbplats, alltså innehåll och funktioner. Kravspecifikation fastställdes så jag visste vad jag ska bygga och vad jag inte ska bygga för att göra kunderna nöjda. Efter det påbörjade jag att göra en enkel design av layouten med hjälp av designverktyget figma, och sedan började jag bygga strukturen för webbplatsen. Med hjälp av Pixlr hittade jag bilder, och kunda redigera dem för att passa min webbplats.</p>
+           <p>Första steget var att komma på en idé om vad sidan ska handla om. Min lokala pizzeria har inte någon webbplats och jag som kund, bland andra, saknar en sådan webbplats att hitta information. Därmed finns det ett klart syfte med webbplatsen. Efter att idén var fastställd började intervjuer med personer i olika åldrar vad de skulle vilja se på en sådan webbplats, alltså innehåll och funktioner. Kravspecifikation fastställdes så jag visste vad jag ska bygga och vad jag inte ska bygga för att göra kunderna nöjda. Efter det påbörjade jag att göra en enkel design av layouten med hjälp av designverktyget figma, och sedan började jag bygga strukturen för webbplatsen. Med hjälp av Pixlr hittade jag bilder, och kunna redigera dem för att passa min webbplats.</p>
            <p>Nu har jag fixat netlify form för att beställningarna ska komma fram korrekt. Efter en beställning lagts hittas ordern och dess data på Netlifys kontrollpanel.</p>
+           <p>Efter användartesterna så kraschade databasen på Netlify, då det utfördes ett test av begränsningarna på formuläret. Detta medförde att jag blev tvungen att göra en ny lansering av webbsidan och försöka få formuläret att fungerar igen, vilket tog många timmar fyllda med felsökande och nya försök.</p>
         </section>
         <section>
             <h2>4. Bilder</h2>
@@ -117,7 +119,13 @@
             <h3>- med metoden "Tänka högt" (Thinking Out Loud)</h3>
             <!-- Endast för VG. Har du inte utfört användartest, tar du bort detta avsnitt (hela section-elementet). -->
             <!-- Beskriv hur du genomförde användartestet. Ange vilka brister du upptäckte och hur du åtgärdat dem. -->
-            <p>...</p>
+            <p>Jag genomförde användartest på tre olika testpersoner. Åldrarna på testpersonerna sträcker sig från 25 till 55 vilket betyder att jag kunnat genomföra testet på olika personlighetstyper. Testet utspelade sig på det viset att jag som testledare gav en instruktion varpå testpersonen ska utföra det jag instruerat dem att göra. Under tiden frågade jag dem var de tänker sig att de hittar olika sorters information på webbplatsen och hur de tänker sig att uppgiften ska utföras. I detta fall kunde en uppgift vara att ta reda på var pizzerian är placerad geografiskt. Under tiden de utförde testerna och talade högt om hur de tänkte, antecknade hjag deras synpunkter och tankar i ett block. Efter testerna hade jag fått ihop en bra lista på saker som borde åtgärdas för att det ska vara klart och tydligt för användaren hur de ska uppnå målet med att besöka webbplatsen.</p>
+            <p>En lista på brister de pekade ut:</p> 
+            <ul>
+                <li>Tecken för att visa obligatoriska input fält i formuläret saknas</li>
+                <li>Headern är för stor, vilket gör det lätt för användaren att missa att det finns innehåll att läsa på startsidan</li>
+                <li>Man kan skriva oändligt antal tecken i beställningen i formuläret, vilket får databasen att krascha när man skickar iväg datan till databasen.</li>           
+            </ul>
         </section>
         <section>
             <h2>Källförteckning</h2>
