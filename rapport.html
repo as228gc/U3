@@ -10,6 +10,7 @@
         html {
             font-size: 16px
         }
+
         body {
             background-color: #FFF;
             color: #000;
@@ -17,19 +18,24 @@
             max-width: 80ch;
             margin-left: 2ch;
         }
+
         header,
         section {
             border-bottom: 1px solid #999;
         }
+
         img {
             max-width: 100%;
         }
+
         p {
             text-align: justify;
         }
+
         h2 {
             margin-bottom: 0.2em;
         }
+
         h3 {
             margin-top: 0.2em;
         }
@@ -50,11 +56,10 @@
                 <!-- Fyll på med kort beskrivning som anger syftet med webbplatsen. -->
                 <!-- Alltså syfte och mål med webbplatsen för företaget eller organisationen. -->
             </p>
-            <p>Målgruppen består av ...
-                Personer som vanligtvis inte är på pizzerian. Stamkunder har ofta någon broschyr med meny och priser, medan en "ny" kund inte har lika bra koll på all information.
+            <p>Målgruppen består av huvudsakligen personer som vanligtvis inte är på pizzerian. Stamkunder har ofta någon slags broschyr med meny och priser, medan en "ny" kund inte har lika bra koll på all information. Dock är broschyrer inte alltid uppdaterade med den senaste informationen, så även tidigare kunder har användning av webbplatsen.
                 I detta fall är målgruppen väldigt bred, då alla åldrar och typer av personer äter pizza.
-                Kunder med specialkost som till exempel vegeterianer eller glutenallergiker. 
-                Företag som vill göra beställningar till evenemang. 
+                Kunder med specialkost som till exempel vegeterianer eller glutenallergiker.
+                Företag som vill göra beställningar till evenemang.
                 <!-- Fyll på med beskrivning som identifierar målgruppen. -->
                 <!-- Ange också eventuell uppdelning i delgrupper. -->
             </p>
@@ -67,6 +72,7 @@
                 <li>Användaren ska kunna beställa direkt från webbplatsen.</li>
                 <li>Visa akutella erbjudanden.</li>
                 <li>Kontaktinformation ska finnas tillgängligt.</li>
+                <li>Visa vart pizzerian finns geografiskt.</li>
             </ul>
         </section>
         <section>
@@ -85,17 +91,20 @@
             <ul>
                 <li>Beställa genom ett formulär</li>
                 <li>Tillgänglighet för mobila enheter</li>
-                <li>...</li>
+                <li>Kunna trycka på en adress för att kunna se en karta</li>
             </ul>
         </section>
         <section>
-           <h2>3. Beskrivning av arbetet</h2>
-           
-           <!-- Beskriv hur du arbetat med uppgiften. -->
-           <!-- För VG är det viktigt att du beskriver hur du använt Garretts modell och tar med referenser med sidnummer till boken, för att styrka det du tar upp i din text. Se mer info i rutan om referenser på uppgiftens webbsida. -->
-           <p>Första steget var att komma på en idé om vad sidan ska handla om. Min lokala pizzeria har inte någon webbplats och jag som kund, bland andra, saknar en sådan webbplats att hitta information. Därmed finns det ett klart syfte med webbplatsen. Efter att idén var fastställd började intervjuer med personer i olika åldrar vad de skulle vilja se på en sådan webbplats, alltså innehåll och funktioner. Kravspecifikation fastställdes så jag visste vad jag ska bygga och vad jag inte ska bygga för att göra kunderna nöjda. Efter det påbörjade jag att göra en enkel design av layouten med hjälp av designverktyget figma, och sedan började jag bygga strukturen för webbplatsen. Med hjälp av Pixlr hittade jag bilder, och kunna redigera dem för att passa min webbplats.</p>
-           <p>Nu har jag fixat netlify form för att beställningarna ska komma fram korrekt. Efter en beställning lagts hittas ordern och dess data på Netlifys kontrollpanel.</p>
-           <p>Efter användartesterna så kraschade databasen på Netlify, då det utfördes ett test av begränsningarna på formuläret. Detta medförde att jag blev tvungen att göra en ny lansering av webbsidan och försöka få formuläret att fungerar igen, vilket tog många timmar fyllda med felsökande och nya försök.</p>
+            <h2>3. Beskrivning av arbetet</h2>
+
+            <!-- Beskriv hur du arbetat med uppgiften. -->
+            <!-- För VG är det viktigt att du beskriver hur du använt Garretts modell och tar med referenser med sidnummer till boken, för att styrka det du tar upp i din text. Se mer info i rutan om referenser på uppgiftens webbsida. -->
+            <p>Första steget var att komma på en idé om vad sidan ska handla om. Min lokala pizzeria har inte någon webbplats och jag som kund, bland andra, saknar en sådan webbplats att hitta information. Därmed finns det ett klart syfte med webbplatsen. Efter att idén var fastställd började intervjuer med personer i olika åldrar vad de skulle vilja se på en sådan webbplats, alltså innehåll och funktioner. Kravspecifikation fastställdes så jag visste vad jag ska bygga och vad jag inte ska bygga för att göra kunderna nöjda. Efter det påbörjade jag att göra en enkel design av layouten med hjälp av designverktyget figma, och sedan började jag bygga strukturen för webbplatsen. Med hjälp av Pixlr hittade jag bilder, och kunna redigera dem för att passa min webbplats.</p>
+
+            <p>Eftersom personerna jag intervjuat sagt att de ville ha tydliga priser, så ska jag göra dem övertydliga. Därför är planen att göra kategorier för varje prisklass stort och synligt för användaren. På det vis gör jag det svårt för användaren att missförstå priserna. Detta gör det också lämpligt för mig att göra en lokal navigering mellan de olika prisklasserna för att användaren snabbt ska kunna gå mellan och söka genom de olika prisklasserna.</p>
+
+            <p>Nu har jag fixat Netlify form för att beställningarna ska komma fram korrekt. Efter en beställning lagts hittas ordern och dess data på Netlifys kontrollpanel.</p>
+            <p>Efter användartesterna så kraschade databasen på Netlify, då det utfördes ett test av begränsningarna på formuläret. Detta medförde att jag blev tvungen att göra en ny lansering av webbsidan och försöka få formuläret att fungerar igen, vilket tog många timmar fyllda med felsökande och nya försök.</p>
         </section>
         <section>
             <h2>4. Bilder</h2>
@@ -111,20 +120,21 @@
             <p>Picture-elementet används på sidan ... för bilden ...</p>
         </section>
         <section>
-           <h2>5. Utvärdering mot kravspecifikationen</h2>
-           <!-- Kopiera din kravspecifikation hit. Efter varje punkt lägger du till en kort mening som motiverar hur kravet är uppfyllt eller motiverar varför det inte är uppfyllt. -->
+            <h2>5. Utvärdering mot kravspecifikationen</h2>
+            <!-- Kopiera din kravspecifikation hit. Efter varje punkt lägger du till en kort mening som motiverar hur kravet är uppfyllt eller motiverar varför det inte är uppfyllt. -->
         </section>
         <section>
             <h2>6. Användartest</h2>
             <h3>- med metoden "Tänka högt" (Thinking Out Loud)</h3>
             <!-- Endast för VG. Har du inte utfört användartest, tar du bort detta avsnitt (hela section-elementet). -->
             <!-- Beskriv hur du genomförde användartestet. Ange vilka brister du upptäckte och hur du åtgärdat dem. -->
-            <p>Jag genomförde användartest på tre olika testpersoner. Åldrarna på testpersonerna sträcker sig från 25 till 55 vilket betyder att jag kunnat genomföra testet på olika personlighetstyper. Testet utspelade sig på det viset att jag som testledare gav en instruktion varpå testpersonen ska utföra det jag instruerat dem att göra. Under tiden frågade jag dem var de tänker sig att de hittar olika sorters information på webbplatsen och hur de tänker sig att uppgiften ska utföras. I detta fall kunde en uppgift vara att ta reda på var pizzerian är placerad geografiskt. Under tiden de utförde testerna och talade högt om hur de tänkte, antecknade hjag deras synpunkter och tankar i ett block. Efter testerna hade jag fått ihop en bra lista på saker som borde åtgärdas för att det ska vara klart och tydligt för användaren hur de ska uppnå målet med att besöka webbplatsen.</p>
-            <p>En lista på brister de pekade ut:</p> 
+            <p>Jag genomförde användartest på tre olika testpersoner. Åldrarna på testpersonerna sträcker sig från 25 till 55 vilket betyder att jag kunnat genomföra testet på olika personlighetstyper. Testet utspelade sig på det viset att jag som testledare gav en instruktion varpå testpersonen ska utföra det jag instruerat dem att göra. Under tiden frågade jag dem var de tänker sig att de hittar olika sorters information på webbplatsen och hur de tänker sig att uppgiften ska utföras. I detta fall kunde en uppgift vara att ta reda på var pizzerian är placerad geografiskt. Under tiden de utförde testerna och talade högt om hur de tänkte, antecknade jag deras synpunkter och tankar. Efter testerna hade jag fått ihop en bra lista på saker som borde åtgärdas för att det ska vara klart och tydligt för användaren hur de ska uppnå målet med att besöka webbplatsen.</p>
+            <p>En lista på brister de pekade ut:</p>
             <ul>
                 <li>Tecken för att visa obligatoriska input fält i formuläret saknas</li>
                 <li>Headern är för stor, vilket gör det lätt för användaren att missa att det finns innehåll att läsa på startsidan</li>
-                <li>Man kan skriva oändligt antal tecken i beställningen i formuläret, vilket får databasen att krascha när man skickar iväg datan till databasen.</li>           
+                <li>Man kan skriva oändligt antal tecken i beställningen i formuläret, vilket får databasen att krascha när man skickar iväg datan till databasen.</li>
+                <li></li>
             </ul>
         </section>
         <section>
