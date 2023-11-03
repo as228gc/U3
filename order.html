@@ -44,20 +44,20 @@
         <form name="orders" method="POST" netlify data-netlify="true" id="order-form">
           <input type="hidden" name="form-name" value="orders" />
           <p>
-            <label>För- och efternamn: <br><input type="text" name="customer-name" required
+            <label>*För- och efternamn: <br><input type="text" name="customer-name" required
                 placeholder="Pizza Degsson" /></label>
           </p>
           <p>
             <label>Din e-mail: <br><input type="email" name="customer-email" placeholder="example@email.com" /></label>
           </p>
           <p>
-            <label>Ditt telefonnummer: <br><input type="text" name="phone-number" placeholder="07X-XXX XX XX" /></label>
+            <label>*Ditt telefonnummer: <br><input type="text" name="phone-number" placeholder="07X-XXX XX XX" required/></label>
           </p>
           <p id="order-label-text">
-            <label>Din beställning: <br> (Antal och namn/nummer på pizzan)
+            <label>*Din beställning: <br> (Antal och namn/nummer på pizzan)
               <br>
               <textarea name="order-text-area" id="order-text-area"
-                placeholder="Ex. 2 st kebabpizza utan lök."></textarea></label>
+                placeholder="Ex. 2 st kebabpizza utan lök." maxlength="400" required></textarea></label>
           </p>
           <p>
             <label>
@@ -68,7 +68,7 @@
               </select>
             </label>
           </p>
-          <!--<p>Vi kontaktar dig via SMS och mail om när din beställning är klar att hämtas!</p>-->
+          <p>Vi kontaktar dig via SMS och mail om när din beställning är klar att hämtas!</p>
           <p>
             <button type="submit" id="order-submit-button">Skicka beställning</button>
           </p>
