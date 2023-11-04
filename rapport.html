@@ -56,7 +56,7 @@
                 <!-- Fyll på med kort beskrivning som anger syftet med webbplatsen. -->
                 <!-- Alltså syfte och mål med webbplatsen för företaget eller organisationen. -->
             </p>
-            <p>Målgruppen består av huvudsakligen personer som vanligtvis inte är på pizzerian. Stamkunder har ofta någon slags broschyr med meny och priser, medan en ny kund inte har lika bra koll på all information. Dock är broschyrer inte alltid uppdaterade med den senaste informationen, så även tidigare kunder har användning av webbplatsen.
+            <p>Målgruppen består huvudsakligen av personer som vanligtvis inte är på pizzerian. Stamkunder har ofta någon slags broschyr med meny och priser, medan en ny kund inte har lika bra koll på all information. Dock är broschyrer inte alltid uppdaterade med den senaste informationen, så även tidigare kunder har användning av webbplatsen.
                 I detta fall är målgruppen väldigt bred, då alla åldrar och typer av personer äter pizza.
                 Mer specifika målgrupper kan vara kunder med specialkost som till exempel vegeterianer eller glutenallergiker.
                 En annan målgrupp är företag som vill göra beställningar till evenemang.
@@ -74,6 +74,7 @@
                 <li>Kontaktinformation ska finnas tillgängligt.</li>
                 <li>Visa var pizzerian finns geografiskt.</li>
                 <li>Visa bilder på alla pizzor i menyn</li>
+                <li>Visa pizzornas ingredienser</li>
             </ul>
         </section>
         <section>
@@ -90,6 +91,7 @@
                 <li>Bild ska finnas för varje pizza</li>
                 <li>Visa information för företag</li>
                 <li>Lokal navigering mellan de olika kategorierna ska finnas</li>
+                <li>Ingredienser visas för varje pizza.</li>
             </ul>
             <h3>Funktion</h3>
             <!-- Skriv korta konkreta och mätbara krav som beskriver VAD användaren ska kunna göra. -->
@@ -107,9 +109,9 @@
             <!-- För VG är det viktigt att du beskriver hur du använt Garretts modell och tar med referenser med sidnummer till boken, för att styrka det du tar upp i din text. Se mer info i rutan om referenser på uppgiftens webbsida. -->
             <p>Första steget var att komma på en idé om vad sidan ska handla om. Min lokala pizzeria har inte någon webbplats och jag som kund, bland andra, saknar en sådan webbplats att hitta information. Därmed finns det ett klart syfte med webbplatsen. Efter att idén var fastställd började intervjuer med personer i olika åldrar vad de skulle vilja se på en sådan webbplats, alltså innehåll och funktioner. Kravspecifikation fastställdes så jag visste vad jag ska bygga och vad jag inte ska bygga för att göra kunderna nöjda. Efter det påbörjade jag att göra en enkel design av layouten med hjälp av designverktyget figma, och sedan började jag bygga strukturen för webbplatsen. Med hjälp av Pixlr hittade jag bilder, och kunna redigera dem för att passa min webbplats.</p>
 
-            <p>Eftersom personerna jag intervjuat sagt att de ville ha tydliga priser, så ska jag göra dem övertydliga. Därför är planen att göra kategorier för varje prisklass stort och synligt för användaren. På det vis gör jag det svårt för användaren att missförstå priserna. Detta gör det också lämpligt för mig att göra en lokal navigering mellan de olika prisklasserna för att användaren snabbt ska kunna gå mellan och söka genom de olika prisklasserna. Kategorin för vegetariska pizzor visar inte priset för hela kategorien, utan priset visas vid varje pizza då det är blandade priser. Antalet vegetariska pizzor som erbjuds är inte tillräckligt för att rättfärdiga att de vegetariska pizzorna ska delas in i prisklasser.</p>
+            <p>Eftersom personerna jag intervjuat sagt att de ville ha tydliga priser, så ska jag göra dem övertydliga. Därför är planen att göra kategorier för varje prisklass stort och synligt för användaren. På det vis gör jag det svårt för användaren att missförstå priserna. Detta gör det också lämpligt för mig att göra en lokal navigering mellan de olika prisklasserna för att användaren snabbt ska kunna gå mellan och söka genom de olika prisklasserna. Kategorin för vegetariska pizzor visar inte priset för hela kategorin, utan priset visas vid varje pizza då det är blandade priser. Antalet vegetariska pizzor som erbjuds är inte tillräckligt för att rättfärdiga att de vegetariska pizzorna ska delas in i prisklasser.</p>
 
-            <p>Nu har jag fixat Netlify form för att beställningarna ska komma fram korrekt. Efter en beställning lagts hittas ordern och dess data på Netlifys kontrollpanel.</p>
+            <p>När jag skapat mitt formulär kopplade jag det till Netlify forms för att beställningarna ska komma fram till en databas. När en beställning lagts hittas ordern i Netlifys kontrollpanel</p>
             <p>Efter användartesterna så kraschade databasen på Netlify, då det utfördes ett test av begränsningarna på formuläret. Detta medförde att jag blev tvungen att göra en ny lansering av webbsidan och försöka få formuläret att fungerar igen, vilket tog många timmar fyllda med felsökande och nya försök.</p>
 
             <p>Jag inser att jag inte kommer hinna med att uppfylla alla VG-krav, men användartesterna tyckte jag kändes nödvändiga för att få viktig feedback och synpunkter på potentiella förbättringar. Målet var att skapa en användarvänlig webbplats och efter användartesterna tycker jag att jag lyckats uppnå en användarvänlig webbplats.</p>
@@ -121,29 +123,25 @@
             <ul>
                 <li>Tagit bort bakgrund.</li>
                 <li>Beskära bilderna för att få rätt dimensioner.</li>
-                <li>...</li>
+                <li>Gjort bilderna ljusare genom att öka exponering.</li>
             </ul>
-            <!-- För VG anger du också var på din webbplats du använt dig av picture-elementet. Har du använt det på flera ställen, duplicerar du textstycket. -->
-            <!-- Om du inte gjort VG-kravet, tar du bort nedanstående stycke. -->
-            <p>Picture-elementet används på sidan ... för bilden ...</p>
         </section>
         <section>
             <h2>5. Utvärdering mot kravspecifikationen</h2>
             <!-- Kopiera din kravspecifikation hit. Efter varje punkt lägger du till en kort mening som motiverar hur kravet är uppfyllt eller motiverar varför det inte är uppfyllt. -->
             <ul>
-                <li>Visa luncherbjudande</li>
-                <li>Visa olika prisklasser för meny</li>
-                <li>Visa öppettider</li>
-                <li>Visa pizzerians adress</li>
-                <li>Vegetarisk meny är en egen kategori</li>
+                <li>Visa luncherbjudande. Detta visas på startsidan där användaren ser erbjudandet direkt.</li>
+                <li>Visa olika prisklasser för meny. Jag har gjort kategorier som visas med "kort" för att användaren ska göra ett aktivt val när de väljer prisklass.</li>
+                <li>Visa öppettider. Öppettider visas på två ställen på webbplatsen för att vara säker på att användaren hittar dem.</li>
+                <li>Visa pizzerians adress. Denna visas både i texterna och i footern på de olika webbsidorna.</li>
+                <li>Vegetarisk meny är en egen kategori. Den vegetariska kategorin har ett eget "kort" bland prisklasserna.</li>
                 <li>Bild ska finnas för varje pizza. Detta blev inte uppfyllt i brist på material och tid.</li>
             </ul>
             <h3>Funktion</h3>
-            <!-- Skriv korta konkreta och mätbara krav som beskriver VAD användaren ska kunna göra. -->
             <ul>
-                <li>Beställa genom ett formulär</li>
-                <li>Tillgänglighet för mobila enheter</li>
-                <li>Kunna trycka på en adress för att kunna se en karta</li>
+                <li>Beställa genom ett formulär. Det finns ett formulär kopplat med Netlify forms, där man kan skicka en beställning som sedan kan visas i kontrollpanelen på Netlify.</li>
+                <li>Tillgänglighet för mobila enheter. Jag har jobbat med media-queries och relativa enhetsmått för att göra webbsidorna responsiva så att de ska fungera på alla enheter.</li>
+                <li>Kunna trycka på en adress för att kunna se en karta. Jag har lagt en länk i footern som hänvisar till kartan jag lagt till på sidan "Om oss".</li>
             </ul>
         </section>
         <section>
@@ -157,8 +155,12 @@
                 <li>Tecken för att visa obligatoriska input fält i formuläret saknas</li>
                 <li>Headern är för stor, vilket gör det lätt för användaren att missa att det finns innehåll att läsa på startsidan</li>
                 <li>Man kan skriva oändligt antal tecken i beställningen i formuläret, vilket får databasen att krascha när man skickar iväg datan till databasen.</li>
-                <li>öppettider borde synas på webbsidan "Om oss" för det kändes naturligt att hitta det där.</li>
+                <li>Öppettider borde synas på webbsidan "Om oss" för det kändes naturligt att hitta det där.</li>
                 <li>Formuläret har inte något exempel på hur man ska skriva in sin beställning. Användaren vill gärna se hur en beställning kan se ut för att kunna formulera sin beställning.</li>
+                <li>"Korten" för kategorierna i menyn var otydliga på enheten som testpersonen använde sig av under testet.</li>
+                <li>I menyn kan pizzorna visas i flera kolumner istället för en lång.</li>
+                <li>Länkar till omdömen av pizzerian borde finnas.</li>
+                <li>Ingen information om familjepizzor finns tillgängligt.</li>
             </ul>
 
             <p>Åtgärder jag gjort efter användartesten:</p>
@@ -168,7 +170,10 @@
                 <li>Minskat storleken på headern i desktop-läge. Det var endast i desktop-läget som headerns storlek var problematisk.</li>
                 <li>Lagt till begränsning av antal tecken man kan skriva i textfältet i beställningsformuläret.</li>
                 <li>Lagt till placeholders i input fälten i formuläret för att visa i vilket format användaren ska skriva sina uppgifter.</li>
+                <li>Ändrat bredd på "korten" i menyn för att de ska visas bättre på fler skärmstorlekar.</li>
+
             </ul>
+            <p>Alla synpunkter som testpersonerna hade synpunkter har inte åtgärdats. Anledningen till detta är att det kan vara subjektiva åsikter eller att det kräver viss funktion som överskridet vad jag kan åstadkomma med de begränsningar jag har i uppgiften.</p>
         </section>
         <section>
             <h2>Källförteckning</h2>
